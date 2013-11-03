@@ -1,0 +1,143 @@
+/*
+	Name: My personal website
+	Date: November 3, 2013
+	Description: Blog, games and portfolio to come. Will regularly update
+	Author: Ryan Lee
+*/
+
+body {
+	background-image:url("images/ryanleebg.jpg");
+	background-repeat:no-repeat;
+	margin-left:auto;
+	margin-right:auto;
+	width:990px;
+	font-size:16px;
+}
+
+/* Paragraphs & Content */
+
+h1 {
+	font-family:'Architects Daughter', 'Monotype Corsiva', cursive;
+	font-size:48px;
+	margin-bottom:20px;
+}
+
+p {
+	font-family:'Josefin Slab', Georgia, serif;
+	line-height:1.3em;
+	margin-bottom:10px;
+}
+
+a {
+	font-weight:bold;
+	color:#3375D6;
+	text-decoration:none;
+}
+
+a:hover {
+	font-weight:bold;
+	color:#A3A8A8;
+	text-decoration:none;
+}
+
+a:visited {
+	font-weight:bold;
+	color:#c31d1d;
+	text-decoration:none;
+}
+
+/* First Section */
+
+.mainphoto {
+	width:400px;
+	height:auto;
+}
+
+.left {
+	float:left;
+	margin-top:100px;
+	margin-right:50px;
+}
+
+/* Second Section */
+
+#maincontent {
+	margin-top:80px;
+}
+
+.right {
+	float:right;
+	width:540px;
+}
+
+/* Social Sites & Arrow */
+
+ul {
+	text-align:left;
+	margin-top:30px;
+}
+
+li {
+	display:inline;
+	list-style-type:none;
+	margin:0px 7px;
+}
+
+img {
+	width:55px;
+	height:55px;
+}
+
+.arrow {
+	position:absolute;
+	
+}
+
+#firstarrow {
+	width:50px;
+	height:60px;
+	margin-top:-35px;
+	margin-left:430px;
+}
+
+#secondarrow {
+	width:90px;
+	height:40px;
+	margin-top:-10px;
+	margin-left:350px;
+}
+
+.twitter a:hover {
+	background-color:#4099FF;
+	border-radius:10px;
+}
+
+.linkedin a:hover {
+	background-color:#007bb6;
+	border-radius:10px;
+}
+
+.github a:hover {
+	background-color:#000000;
+	border-radius:10px;
+}
+
+.facebook a:hover {
+	background-color:#3b5998;
+	border-radius:10px;
+}
+
+.tumblr a:hover {
+	background-color:#32506d;
+	border-radius:10px;
+}
+
+.instagram a:hover {
+	background-color:#a82400;
+	border-radius:10px;
+}
+
+.soundcloud a:hover {
+	background-color:#ff7700;
+	border-radius:10px;
+}
