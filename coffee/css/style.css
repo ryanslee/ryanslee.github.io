@@ -1,0 +1,100 @@
+/* 
+	Name: Dream Beans Caffe Project
+	Date: November 2013
+	Description: SINY Product & Design - Lab 0/1
+	Author: Ryan Lee
+	Author URL: http://www.ryanslee.com
+*/
+
+body {
+	background-color:#ffffff;
+	margin:0px auto;
+	width:900px;
+	font-family:"Times New Roman", Helvetica, sans-serif;
+}
+
+header {
+	position:relative;
+	height:250px;
+	width:auto;
+}
+
+#banner {
+	position:absolute;
+	z-index:-1;
+	height:300px;
+	width:900px;
+}
+
+h1 {
+	color:#ffffff;
+	text-align:center;
+	margin:0px;
+}
+
+h1 span {
+	color:#C2AD99;
+}
+
+nav {
+	position:relative;
+	background-color:#241200;
+	margin-top:175px;
+}
+
+ul {
+	padding:10px 0px;
+	text-align:center;
+}
+
+li {
+	display:inline;
+}
+
+li a {
+	text-decoration:none;
+	text-transform:lowercase;
+	color:#C2AD99;
+	margin:0px 12px;
+}
+
+section {
+	padding:30px 0px;
+	background-color:#ffffff;
+}
+
+.content {
+	background-color:#ffffff;
+	width:300px;
+	text-align:center;
+} 
+
+.content p {
+	padding-bottom:20px;
+}
+
+#left {
+	float:left;
+	margin-left:100px;
+}
+
+#right{
+	float:right;
+	margin-right:100px;
+}
+
+.subheading {
+	font-size:16px;
+	font-weight:bold;
+	color:#241200;
+	font-family:Helvetica;
+	margin-bottom:10px;
+}
+
+footer {
+	background-color:#241200;
+	color:#C2AD99;
+	text-align:center;
+	padding:40px 0px;
+	clear:both;
+}
