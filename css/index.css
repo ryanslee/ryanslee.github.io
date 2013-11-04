@@ -51,6 +51,7 @@ a:visited {
 .mainphoto {
 	width:400px;
 	height:auto;
+	margin-top:-25px;
 }
 
 .left {
