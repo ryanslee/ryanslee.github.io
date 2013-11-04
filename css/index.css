@@ -11,7 +11,7 @@ body {
 	margin-left:auto;
 	margin-right:auto;
 	width:990px;
-	font-size:16px;
+	font-size:18px;
 }
 
 /* Paragraphs & Content */
@@ -24,8 +24,8 @@ h1 {
 
 p {
 	font-family:'Josefin Slab', Georgia, serif;
-	line-height:1.3em;
-	margin-bottom:10px;
+	line-height:1.4em;
+	margin-bottom:25px;
 }
 
 a {
@@ -51,19 +51,18 @@ a:visited {
 .mainphoto {
 	width:400px;
 	height:auto;
-	margin-top:-25px;
 }
 
 .left {
 	float:left;
-	margin-top:100px;
+	margin-top:95px;
 	margin-right:50px;
 }
 
 /* Second Section */
 
 #maincontent {
-	margin-top:80px;
+	margin-top:130px;
 }
 
 .right {
@@ -95,10 +94,10 @@ img {
 }
 
 #firstarrow {
-	width:50px;
-	height:60px;
-	margin-top:-35px;
-	margin-left:430px;
+	width:75px;
+	height:75px;
+	margin-top:-60px;
+	margin-left:280px;
 }
 
 #secondarrow {
