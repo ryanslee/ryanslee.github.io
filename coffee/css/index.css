@@ -26,20 +26,16 @@ header {
 	width:900px;
 }
 
-h1 {
-	color:#ffffff;
-	text-align:center;
-	margin:0px;
-}
-
-h1 span {
-	color:#C2AD99;
+#logo {
+	margin:20px 0px 0px 400px;
+	width:100px;
+	height:auto;
 }
 
 nav {
 	position:relative;
 	background-color:#241200;
-	margin-top:175px;
+	margin-top:20px;
 }
 
 ul {
