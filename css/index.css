@@ -34,15 +34,15 @@ a {
 	text-decoration:none;
 }
 
-a:hover {
-	font-weight:bold;
-	color:#A3A8A8;
-	text-decoration:none;
-}
-
 a:visited {
 	font-weight:bold;
 	color:#c31d1d;
+	text-decoration:none;
+}
+
+a:hover {
+	font-weight:bold;
+	color:#A3A8A8;
 	text-decoration:none;
 }
 
@@ -109,35 +109,35 @@ img {
 
 .twitter a:hover {
 	background-color:#4099FF;
-	border-radius:10px;
+	border-radius:100%;
 }
 
 .linkedin a:hover {
 	background-color:#007bb6;
-	border-radius:10px;
+	border-radius:100%;
 }
 
 .github a:hover {
 	background-color:#000000;
-	border-radius:10px;
+	border-radius:100%;
 }
 
 .facebook a:hover {
 	background-color:#3b5998;
-	border-radius:10px;
-}
-
-.tumblr a:hover {
-	background-color:#32506d;
-	border-radius:10px;
+	border-radius:100%;
 }
 
 .instagram a:hover {
 	background-color:#a82400;
-	border-radius:10px;
+	border-radius:100%;
+}
+
+.tumblr a:hover {
+	background-color:#32506d;
+	border-radius:100%;
 }
 
 .soundcloud a:hover {
 	background-color:#ff7700;
-	border-radius:10px;
+	border-radius:100%;
 }
