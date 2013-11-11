@@ -14,16 +14,8 @@ body {
 }
 
 header {
-	position:relative;
+	background-image:url('../images/coffee.jpg');
 	height:250px;
-	width:auto;
-}
-
-#banner {
-	position:absolute;
-	z-index:-1;
-	height:300px;
-	width:900px;
 }
 
 #logo {
@@ -53,19 +45,20 @@ li a {
 	color:#C2AD99;
 	margin:0px 12px;
 }
-
-section {
-	padding:30px 0px;
+/*
+.wrapper {
+	padding:40px 0px;
 	background-color:#ffffff;
 }
-
-.content {
+*/
+article {
 	background-color:#ffffff;
 	width:300px;
 	text-align:center;
+	padding:40px 0 20px 0;
 } 
 
-.content p {
+article p {
 	padding-bottom:20px;
 }
 
@@ -84,7 +77,7 @@ section {
 	font-weight:bold;
 	color:#241200;
 	font-family:Helvetica;
-	margin-bottom:10px;
+	margin-bottom:20px;
 }
 
 footer {
