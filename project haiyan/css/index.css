@@ -1,0 +1,147 @@
+/*
+	Name: Typhoon Haiyan Donation Site
+	Date: November 13, 2013
+	Description: Site to help with Typhoon donations
+	Author: Ryan Lee
+*/
+
+html{
+	font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+body{
+	width:960px;
+	margin:0 auto;
+}
+
+/*
+INTRO
+*/
+
+h1{
+	color:#d23e2a;
+	margin-bottom:15px;
+}
+
+.animation{
+	float:right;
+	margin:0 0 2px 5px;
+	border:1px solid #999;
+	padding:2px;
+}
+
+p {
+	padding-bottom:15px;
+	margin:0;
+	line-height:1.5em;
+}
+
+/*
+Resources Section
+*/
+
+.resources{
+	display:inline;
+	margin-right:10px;
+}
+
+ul{
+	list-style-type: none;
+	padding:0;
+	display:inline;
+}
+
+li{
+	display:inline;
+	margin-right:20px;
+}
+
+a:link{
+	color:#176dee;
+	font-weight:700;
+}
+
+a:hover{
+	color:#999;
+	font-weight:700;
+}
+
+a:visited{
+	font-weight:700;
+}
+
+/*
+Donation Section
+*/
+
+.donation_description{
+	margin-bottom:20px;
+}
+
+section{
+	margin-bottom:310px;
+}
+
+article{
+	text-align: center;
+	width:300px;
+	border:1px solid lightgray;
+	border-radius:10px;	
+	padding:30px;
+}
+
+.left{
+	float:left;
+	margin-left:75px;
+}
+
+.right{
+	float:right;
+	margin-right:75px;
+}
+
+h2 {
+	text-align: center;
+	color:#176dee;
+	margin:0;
+	padding:0;
+}
+
+.donationbox{
+	text-align: center;
+	margin-top:0px;
+	margin-bottom:20px;
+	padding:0;
+}
+
+.button{
+	width:200px;
+	height:75px;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	color:white;
+	font-weight:700;
+	background:#09a461;
+	border:0;
+	border-radius:5px;
+}
+
+/*
+Photogrid
+*/
+
+table{
+	width:960px;
+}
+
+td{
+	padding:0 5px;
+}
+
+h6{
+	font-weight:300;
+	margin-top:2px;
+	margin-bottom:50px;
+	padding-left:5px;
+}
