@@ -1,5 +1,5 @@
 /* 
-	Name: Dream Beans Caffe Project
+	Name: Dream Beans Coffee Project
 	Date: November 2013
 	Description: SINY Product & Design - Lab 0/1
 	Author: Ryan Lee
@@ -15,7 +15,7 @@ body {
 
 header {
 	background-image:url('images/coffee.jpg');
-	height:250px;
+	height:230px;
 }
 
 #logo {
@@ -53,7 +53,7 @@ li a {
 */
 article {
 	background-color:#ffffff;
-	width:300px;
+	width:350px;
 	text-align:center;
 	padding:40px 0 20px 0;
 } 
@@ -64,12 +64,12 @@ article p {
 
 #left {
 	float:left;
-	margin-left:100px;
+	margin-left:60px;
 }
 
 #right{
 	float:right;
-	margin-right:100px;
+	margin-right:60px;
 }
 
 .subheading {

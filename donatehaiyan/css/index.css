@@ -14,6 +14,11 @@ body{
 	margin:0 auto;
 }
 
+hr{
+	border-top:0.5px solid gray;
+	margin-top:30px;
+}
+
 /*
 
 header{
@@ -96,7 +101,7 @@ Donation Section
 }
 
 section{
-	margin-bottom:310px;
+	margin-bottom:330px;
 }
 
 article{
