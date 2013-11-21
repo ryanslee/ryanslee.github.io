@@ -19,24 +19,35 @@
     font-style: normal;
 }
 
-body {
-	width:900px;
-	margin:0px auto;
+.wrapper {
+	width:80%;
+	margin:0 auto;
+	margin-top:1%;
 	font-family:Arial, Verdana, sans-serif;
 }
 
-h1 {
+ /* HEADER */
+
+header{
+	margin:0;
+}
+
+.logo {
 	font-family:'league_gothicregular';
-	font-size:72px;
+	font-size:4.5em;
 	text-transform:uppercase;
-	margin:0px;
+	margin:0;
+	width:60%;
 	float:left;
 }
 
+/* NAVIGATION */
+
 nav {
+	width:40%;
 	text-align: right;
 	float:right;
-	margin-top:45px;
+	margin-top:3em;
 }
 
 hr {
@@ -49,58 +60,86 @@ hr {
 	border-bottom:1px solid #000;
 }
 
-ul li {
+li {
 	display:inline;
 }
 
-ul li a {
+li a {
 	text-decoration:none;
 	color:#000000;
-	font-size:13px;
+	font-size:0.8em;
 	font-weight:bold;
-	margin-right:15px;
+	margin-left:5%;
 }
 
+ /* MAIN WRAPPER */
+
+.wrappermain {
+	margin-top:4%;
+}
+
+/* ASIDE */
+
 aside {
-	width:200px;
+	width:30%;
 	font-weight:bold;
-	margin-top:30px;
-	margin-right:60px;
+	margin-right:5%;
+	line-height:1.2em;
 	float:left;
 }
 
-.asidecontent p {
-	margin-bottom:15px;
-	font-size:13px;
+aside p {
+	margin-bottom:8%;
+	font-size:0.8em;
 }
 
+/* MAIN CONTENT */
+
+
 section {
-	width:620px;
-	margin-top:30px;
+	width:65%;
 	float:right;
 }
 
 h5 {
-	font-size:10px;
+	font-size:0.6em;
 	font-weight:bold;
-	margin-bottom:5px;
 }
 
 h2 {
 	font-family:'league_gothicregular';
 	text-transform:uppercase;
-	font-size:30px;
-	margin-bottom:10px;
+	font-size:1.8em;
+	margin-bottom:1%;
 }
 
 .maincontent {
-	margin-bottom:30px;
-	font-size:13px;
-	line-height:1.3em;
+	margin-bottom:2%;
+	font-size:0.8em;
+	line-height:1.4em;
+}
+
+.endpost {
+	margin-bottom:4%;
 }
 
 footer p {
-	margin-top:5px;
+	margin-top:0.5%;
 	font-weight:bold;
 	font-size:0.9em;
 }
+
+/* RESPONSIVITY */
+
+@media screen and (min-width:300px) and (max-width:700px) {
+	header, aside, section, .logo, nav {float:none; width:100%;}
+	.logo, nav {margin:3% 0; text-align:center;}
+	.logo {font-size:3.5em;}
+	li a {margin:0 5%;}
+	aside {margin:5% 0;}
+	aside p {margin-bottom:3%; text-align:center;}
+	h2 {margin-bottom:3%;}
+	.maincontent {line-height:1.5em;}
+}
+
+
