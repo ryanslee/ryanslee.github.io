@@ -159,12 +159,12 @@ body.inactive {
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 .onoffswitch-inner:before {
-    content: "ON";
+    content: "OFF";
     padding-left: 15px;
     background-color: #FFFFFF; color: #222222;
 }
 .onoffswitch-inner:after {
-    content: "OFF";
+    content: "ON";
     padding-right: 15px;
     background-color: #222222; color: #FFFFFF;
     text-align: right;
