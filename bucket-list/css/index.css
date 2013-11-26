@@ -27,11 +27,6 @@ a:hover {
     font-weight: bold;
 }
 
-p {
-    line-height: 1.5em;
-    font-size:1.1em;
-}
-
 .headerfont {
     font-family:langdonregular, Helvetica, sans-serif;
     text-transform:uppercase;
@@ -42,7 +37,7 @@ p {
 nav {
     border-bottom:6px solid #222;
     width:100%;
-    padding:0.5em 0;
+    padding:1.5em 0 0.5em 0;
     font-family:langdonregular, Helvetica, sans-serif;
 }
 
