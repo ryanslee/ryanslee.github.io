@@ -97,7 +97,7 @@ nav a:active {
 
 /* ON/OFF SWITCH */
 
-h1.active {
+h1.inactive {
     color:#222; 
     transition:margin-left 1s, color 1s; 
     -webkit-transition:margin-left 1s, color 1s; 
@@ -105,7 +105,7 @@ h1.active {
     -o-transition:margin-left 1s, color 1s;
 }
 
-h1.inactive {
+h1.active {
     color:white; margin-left:6%;
     transition:margin-left 1s, color 1s; 
     -webkit-transition:margin-left 1s, color 1s; 
@@ -113,7 +113,7 @@ h1.inactive {
     -o-transition:margin-left 1s, color 1s;
 }
 
-nav.active { 
+nav.inactive { 
     padding:0.5em 0;
     transition:padding-top 1s; 
     -webkit-transition:padding-top 1s; 
@@ -121,7 +121,7 @@ nav.active {
     -o-transition:padding-top 1s;
 }
 
-nav.inactive {
+nav.active {
     padding-top:5em; 
     transition:padding-top 1s; 
     -webkit-transition:padding-top 1s; 
@@ -129,11 +129,11 @@ nav.inactive {
     -o-transition:padding-top 1s;
 }
 
-body.active {
+body.inactive {
     background-color: white;
 }
 
-body.inactive {
+body.active {
     background-color: #222;
 }
 
