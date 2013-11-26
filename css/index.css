@@ -1,143 +1,297 @@
-/*
-	Name: My personal website
-	Date: November 3, 2013
-	Description: Blog, games and portfolio to come. Will regularly update
-	Author: Ryan Lee
-*/
+/*	Name: My personal website
+	Date: November 2013
+	Author: Ryan Lee*/
 
 body {
-	background-image:url("images/ryanleebg.jpg");
-	background-repeat:no-repeat;
-	margin-left:auto;
-	margin-right:auto;
-	width:990px;
-	font-size:18px;
-}
-
-/* Paragraphs & Content */
-
-h1 {
-	font-family:'cabinsketchregular', 'Monotype Corsiva', cursive;
-	font-size:36px;
-	margin-bottom:20px;
-}
-
-p {
-	font-family:'Josefin Slab', Georgia, serif;
-	line-height:1.4em;
-	margin-bottom:25px;
+	margin:0 auto;
+	width:100%;
+	font-family:"Alegreya", 'Times New Roman', serif;
+    color:#222;
 }
 
 a {
-	font-weight:bold;
-	color:#3375D6;
-	text-decoration:none;
+    text-decoration:none;
+    color:#222;
+    font-weight: bold;
 }
 
 a:visited {
-	font-weight:bold;
-	color:#c31d1d;
-	text-decoration:none;
+    text-decoration:none;
+    color:#222;
+    font-weight: bold;    
 }
 
 a:hover {
-	font-weight:bold;
-	color:#A3A8A8;
-	text-decoration:none;
+    text-decoration:none;
+    color:#bbb;
+    font-weight: bold;
 }
 
-/* First Section */
-
-.mainphoto {
-	width:400px;
-	height:auto;
+p {
+    line-height: 1.5em;
+    font-size:1.1em;
 }
 
-.left {
-	float:left;
-	margin-top:95px;
-	margin-right:50px;
+.headerfont {
+    font-family:langdonregular, Helvetica, sans-serif;
+    text-transform:uppercase;
 }
 
-/* Second Section */
+/* NAV */
 
-#maincontent {
-	margin-top:130px;
+nav {
+    border-bottom:7px solid #222;
+    width:100%;
+    padding:0.5em 0;
+    font-family:langdonregular, Helvetica, sans-serif;
 }
 
-.right {
-	float:right;
-	width:540px;
+h1 {
+    display:inline;
+    width:50%;
+    font-size:4em;
+    margin-left:1%;
 }
 
-/* Social Sites & Arrow */
-
-ul {
-	text-align:left;
-	margin-top:30px;
+.pagelinks {
+    float:right;
+    font-size:1.2em;
+    margin:1em 1% 0 0;
+    width:50%;
+    text-align:right;
 }
 
-li {
+.pagelinks li {
+    display:inline;
+    list-style-type:none;
+}
+
+.pagelinks a {
+    padding:1em;
+    border:0;
+}
+
+nav a:visited {
+    text-decoration:none;
+    color:#222;
+    font-weight: bold;    
+}
+
+nav a:hover {
+    text-decoration:none;
+    color:white;
+    font-weight: bold;
+    background-color:#222;
+    transition:background-color 0.8s, color 0.8s;
+    -webkit-transition:background-color 0.8s, color 0.8s;
+    -moz-transition:background-color 0.8s, color 0.8s;
+    -o-transition:background-color 0.8s, color 0.8s;
+}
+
+nav a:active {
+    text-decoration:none;
+    color:white;
+    font-weight: bold;
+    background-color:#222;
+}
+
+/* ON/OFF SWITCH */
+
+h1.active {
+    color:#222; 
+    transition:margin-left 1s, color 1s; 
+    -webkit-transition:margin-left 1s, color 1s; 
+    -moz-transition:margin-left 1s, color 1s; 
+    -o-transition:margin-left 1s, color 1s;
+}
+
+h1.inactive {
+    color:white; margin-left:6%;
+    transition:margin-left 1s, color 1s; 
+    -webkit-transition:margin-left 1s, color 1s; 
+    -moz-transition:margin-left 1s, color 1s; 
+    -o-transition:margin-left 1s, color 1s;
+}
+
+nav.active { 
+    padding:0.5em 0;
+    transition:padding-top 1s; 
+    -webkit-transition:padding-top 1s; 
+    -moz-transition:padding-top 1s;
+    -o-transition:padding-top 1s;
+}
+
+nav.inactive {
+    padding-top:5em; 
+    transition:padding-top 1s; 
+    -webkit-transition:padding-top 1s; 
+    -moz-transition:padding-top 1s;
+    -o-transition:padding-top 1s;
+}
+
+body.active {
+    background-color: white;
+}
+
+body.inactive {
+    background-color: #222;
+}
+
+.onoffswitch {
+    width: 100px; position:absolute; bottom:3em; right:5em;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #222222; border-radius: 5px;
+}
+.onoffswitch-inner {
+    width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 16px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 15px;
+    background-color: #FFFFFF; color: #222222;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 15px;
+    background-color: #222222; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    width: 20px; margin: 5px;
+    background: #FFFFFF;
+    border: 2px solid #222222; border-radius: 5px;
+    position: absolute; top: 0; bottom: 0; right: 66px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+/* WRAPPER */
+
+.wrapper {
+    width:90%;
+    margin:0 auto;
+}
+
+/* TITLES */
+
+h2 {
+    margin:1em 0 0.6em 0;
+    font-size:2em;
+    padding:0;
+    font-weight:bold;
+}
+
+/* ABOUT ME SECTION */
+
+p {
+    margin:1em 0;
+}
+
+.firstparagraph{
+    margin-top:0;
+}
+
+.lastparagraph{
+    margin-bottom:0.5em;
+}
+
+/* FIND ME SECTION */
+
+.findme {
+    display:inline-block;
+    width:70%;
+    vertical-align: top;
+}
+
+.findme li {
 	display:inline;
 	list-style-type:none;
-	margin:0px 7px;
+	margin:0;
 }
 
-img {
-	width:55px;
-	height:55px;
+.findme ul {
+    margin:0;
+    padding:0;
 }
 
-.arrow {
-	position:absolute;
-	
+.social {
+	width:50px;
+	height:50px;
+    margin:0 2% 1em 2%;
+    border-radius:8px;
 }
 
-#firstarrow {
-	width:75px;
-	height:75px;
-	margin-top:-60px;
-	margin-left:280px;
+#firstsocial {
+    margin-left:0;
+}
+#firstsocial:hover {
+    background-color:#00acee; /* TWITTER COLOR HERE */
 }
 
-#secondarrow {
-	width:90px;
-	height:40px;
-	margin-top:-10px;
-	margin-left:350px;
+#linkedin:hover {
+    background-color:#0e76a8; /* LINKEDIN COLOR HERE */
 }
 
-.twitter a:hover {
-	background-color:#4099FF;
-	border-radius:100%;
+#github:hover {
+    background-color:#bbb; /* GITHUB COLOR HERE */
 }
 
-.linkedin a:hover {
-	background-color:#007bb6;
-	border-radius:100%;
+#behance:hover {
+    background-color:#005cff; /* LINKEDIN COLOR HERE */
 }
 
-.github a:hover {
-	background-color:#000000;
-	border-radius:100%;
+#medium:hover {
+    background-color:#999; /* LINKEDIN COLOR HERE */
 }
 
-.facebook a:hover {
-	background-color:#3b5998;
-	border-radius:100%;
+#facebook:hover {
+    background-color:#3b5998; /* LINKEDIN COLOR HERE */
 }
 
-.instagram a:hover {
-	background-color:#a82400;
-	border-radius:100%;
+#instagram:hover {
+    background-color:#c31d1d; /* LINKEDIN COLOR HERE */
 }
 
-.tumblr a:hover {
-	background-color:#32506d;
-	border-radius:100%;
+#tumblr:hover {
+    background-color:#34526f; /* LINKEDIN COLOR HERE */
 }
 
-.soundcloud a:hover {
-	background-color:#ff7700;
-	border-radius:100%;
+#soundcloud:hover {
+    background-color:#ff7700; /* LINKEDIN COLOR HERE */
 }
+
+
+/* QUOTES SECTION */
+
+.quotes {
+    display:inline-block;
+    width:29%; /* opposite of find me section */
+    vertical-align: top;
+    text-align:right;
+}
+
+h4 {
+    font-style:italic;
+    font-size:1.3em;
+    margin-top:-0.5em;
+}
+
