@@ -109,13 +109,13 @@ h2 {
 }
 
 .subtitle {
-    margin:0.3em 0 0 1em;
+    margin:0.3em 0 0 0.3em;
     vertical-align: top;
 }
 
 #pagetitle {
     display:block;
-    margin:1em 0 1.5em 0;
+    margin:1em 0 1em 0;
 }
 
 /* LIST */
@@ -156,6 +156,7 @@ section {
 
 .water {
     margin-left:1.3em;
+    margin-top:0.5em;
 }
 
 .water li {
@@ -164,4 +165,3 @@ section {
     margin-bottom:1em;
     padding-left:0.5em;
 }
-
