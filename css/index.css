@@ -296,29 +296,3 @@ h4 {
     margin-top:-0.5em;
 }
 
-/* RESPONSIVE SECTION */
-
-@media screen and (min-width:300px) and (max-width:700px) {
-    header, aside, section, .logo, nav {float:none; width:100%;}
-    .logo, nav {margin:3% 0; text-align:center;}
-    .logo {font-size:3.5em;}
-    li a {margin:0 5%;}
-    aside {margin:5% 0;}
-    aside p {margin-bottom:3%; text-align:center;}
-    h2 {margin-bottom:3%;}
-    .maincontent {line-height:1.5em;}
-}
-
-/*.onoffswitch{
-    display:none;
-}*/
-
-
-
-
-
-
-
-
-
-
