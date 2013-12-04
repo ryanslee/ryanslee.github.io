@@ -237,7 +237,7 @@ p {
 .social {
 	width:3em;
 	height:3em;
-    margin:0 2% 1em 2%;
+    margin:0 1% 1em 1%;
     border-radius:8px;
 }
 
@@ -257,27 +257,27 @@ p {
 }
 
 #behance:hover {
-    background-color:#005cff; /* LINKEDIN COLOR HERE */
+    background-color:#005cff; /* BEHANCE COLOR HERE */
 }
 
 #medium:hover {
-    background-color:#999; /* LINKEDIN COLOR HERE */
+    background-color:#999; /* MEDIUM COLOR HERE */
 }
 
 #facebook:hover {
-    background-color:#3b5998; /* LINKEDIN COLOR HERE */
+    background-color:#3b5998; /* FACEBOOK COLOR HERE */
 }
 
 #instagram:hover {
-    background-color:#c31d1d; /* LINKEDIN COLOR HERE */
+    background-color:#c31d1d; /* INSTAGRAM COLOR HERE */
 }
 
 #tumblr:hover {
-    background-color:#34526f; /* LINKEDIN COLOR HERE */
+    background-color:#34526f; /* TUMBLR COLOR HERE */
 }
 
 #soundcloud:hover {
-    background-color:#ff7700; /* LINKEDIN COLOR HERE */
+    background-color:#ff7700; /* SOUNDCLOUD COLOR HERE */
 }
 
 
@@ -295,4 +295,30 @@ h4 {
     font-size:1.3em;
     margin-top:-0.5em;
 }
+
+/* RESPONSIVE SECTION */
+
+@media screen and (min-width:300px) and (max-width:700px) {
+    header, aside, section, .logo, nav {float:none; width:100%;}
+    .logo, nav {margin:3% 0; text-align:center;}
+    .logo {font-size:3.5em;}
+    li a {margin:0 5%;}
+    aside {margin:5% 0;}
+    aside p {margin-bottom:3%; text-align:center;}
+    h2 {margin-bottom:3%;}
+    .maincontent {line-height:1.5em;}
+}
+
+/*.onoffswitch{
+    display:none;
+}*/
+
+
+
+
+
+
+
+
+
 
