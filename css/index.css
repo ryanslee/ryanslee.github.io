@@ -1,43 +1,83 @@
-/*	Name: My personal website
-	Date: November 2013
-	Author: Ryan Lee*/
-
 body {
+    background:url('../images/underconstruction.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    z-index:-2;
 	margin:0 auto;
 	width:100%;
 	font-family:"Alegreya", 'Times New Roman', serif;
-    color:#222;
-}
-
-a {
-    text-decoration:none;
-    color:#222;
-    font-weight: bold;
-}
-
-a:visited {
-    text-decoration:none;
-    color:#222;
-    font-weight: bold;    
-}
-
-a:hover {
-    text-decoration:none;
-    color:#bbb;
-    font-weight: bold;
+    color:white;
 }
 
 p {
     line-height: 1.5em;
-    font-size:1.1em;
+    font-size:1em;
 }
 
-.headerfont {
+.first{
+    margin-bottom:3em;
+}
+
+.quote{
+    margin-left:2em;
+}
+
+a {
+    text-decoration: none;
+    border-bottom:1px solid #aaa;
+    color:white;
+}
+
+a:visited {
+    text-decoration: none;
+    color:white;
+}
+
+a:hover{
+    text-decoration: none;
+    border-bottom:1px solid white;
+    text-shadow:0px 2px 5px rgba(255,255,255,1);
+    color:white;
+}
+
+a:active {
+    text-decoration: none;
+    border-bottom:1px solid white;
+    text-shadow:0px 2px 5px rgba(255,255,255,1);
+    color:white;
+}
+
+div {
+    width:40%;
+    margin-left:5%;
+    margin-top:15%;
+    padding:1% 2%;
+    background-color:rgba(51,51,51,0.6);
+    border-radius:5px;
+}
+
+
+
+
+/*a:visited {
+    text-decoration:underline;
+    color:#fff;
+    font-weight: bold;    
+}
+
+a:hover {
+    text-decoration:underline;
+    color:#fff;
+    font-weight: bold;
+}*/
+
+
+/*.headerfont {
     font-family:langdonregular, Helvetica, sans-serif;
     text-transform:uppercase;
 }
 
-/* NAV */
+/ * NAV * /
 
 nav {
     border-bottom:6px solid #222;
@@ -95,7 +135,7 @@ nav a:active {
     background-color:#222;
 }
 
-/* ON/OFF SWITCH */
+/ * ON/OFF SWITCH * /
 
 h1.active {
     color:#222; 
@@ -174,7 +214,7 @@ body.inactive {
     background: #FFFFFF;
     border: 2px solid #222222; border-radius: 5px;
     position: absolute; top: 0; bottom: 0; right: 4.125em;
-    /* transition */
+    / * transition * /
     -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
     -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
 }
@@ -185,14 +225,14 @@ body.inactive {
     right: 0; 
 }
 
-/* WRAPPER */
+/ * WRAPPER * /
 
 .wrapper {
     width:90%;
     margin:0 auto;
 }
 
-/* TITLES */
+/ * TITLES * /
 
 h2 {
     margin:1em 0;
@@ -201,7 +241,7 @@ h2 {
     font-weight:bold;
 }
 
-/* ABOUT ME SECTION */
+/ * ABOUT ME SECTION * /
 
 p {
     margin:1em 0;
@@ -215,7 +255,7 @@ p {
     margin-bottom:0.5em;
 }
 
-/* FIND ME SECTION */
+/ * FIND ME SECTION * /
 
 .findme {
     display:inline-block;
@@ -245,47 +285,47 @@ p {
     margin-left:0;
 }
 #firstsocial:hover {
-    background-color:#00acee; /* TWITTER COLOR HERE */
+    background-color:#00acee; / * TWITTER COLOR HERE * /
 }
 
 #linkedin:hover {
-    background-color:#0e76a8; /* LINKEDIN COLOR HERE */
+    background-color:#0e76a8; / * LINKEDIN COLOR HERE * /
 }
 
 #github:hover {
-    background-color:#bbb; /* GITHUB COLOR HERE */
+    background-color:#bbb; / * GITHUB COLOR HERE * /
 }
 
 #behance:hover {
-    background-color:#005cff; /* BEHANCE COLOR HERE */
+    background-color:#005cff; / * BEHANCE COLOR HERE * /
 }
 
 #medium:hover {
-    background-color:#999; /* MEDIUM COLOR HERE */
+    background-color:#999; / * MEDIUM COLOR HERE * /
 }
 
 #facebook:hover {
-    background-color:#3b5998; /* FACEBOOK COLOR HERE */
+    background-color:#3b5998; / * FACEBOOK COLOR HERE * /
 }
 
 #instagram:hover {
-    background-color:#c31d1d; /* INSTAGRAM COLOR HERE */
+    background-color:#c31d1d; / * INSTAGRAM COLOR HERE * /
 }
 
 #tumblr:hover {
-    background-color:#34526f; /* TUMBLR COLOR HERE */
+    background-color:#34526f; / * TUMBLR COLOR HERE * /
 }
 
 #soundcloud:hover {
-    background-color:#ff7700; /* SOUNDCLOUD COLOR HERE */
+    background-color:#ff7700; / * SOUNDCLOUD COLOR HERE * /
 }
 
 
-/* QUOTES SECTION */
+/ * QUOTES SECTION * /
 
 .quotes {
     display:inline-block;
-    width:29%; /* opposite of find me section */
+    width:29%; / * opposite of find me section * /
     vertical-align: top;
     text-align:right;
 }
@@ -296,3 +336,4 @@ h4 {
     margin-top:-0.5em;
 }
 
+*/
