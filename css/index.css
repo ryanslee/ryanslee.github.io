@@ -1,12 +1,7 @@
 body {
-    /*background:url('../images/underconstruction.jpg');
+    background:url('../images/underconstruction.jpg');
     background-size:cover;
-    background-repeat: no-repeat;*/
-    vertical-align: middle;
-    background-size: 100%;
-    background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-image: url('../images/underconstruction.jpg'); 
     z-index:-2;
 	margin:0 auto;
 	width:100%;
