@@ -122,8 +122,8 @@ ol {
 
 .big-button:hover{
 	color:white;
-	text-shadow:0.125em 0.125em 0.625em white;
-	box-shadow:0 0 0.3125em 0.125em #555;
+	text-shadow:0 0 0.5em white;
+	box-shadow:0 0 0.3em 0.125em #333;
 }
 
 /* fourth page */
