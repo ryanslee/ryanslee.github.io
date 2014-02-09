@@ -1,7 +1,4 @@
 html {
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
-	box-sizing: border-box;
 	height:100%;
 	background:url('bg2.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -70,16 +67,17 @@ span {
 /* SECOND SECTION & SQUARES */
 
 .maincontent {
-	width:40%;
+	width:55%;
 	height:50%;
 	margin:0 auto;
+	text-align: center;
 }
 
 .squares {
-	width:260px;
-	height:260px;
+	width:16.25em;
+	height:16.25em;
 	margin-left: 2%;
-	line-height:260px;
+	line-height:16.25em;
 	display:inline-block;
 	text-decoration: none;
 	border: 0.3em solid white;
@@ -102,8 +100,8 @@ span {
 /* HOVER */
 
 .squares:hover {
-	box-shadow:0 0 10px 3px white;
-	text-shadow:2px 3px 5px black;
+	box-shadow:0 0 0.625em 0.1875em white;
+	text-shadow:0.125em 0.1875em 0.3125em black;
 }
 
 .one-bg {
@@ -126,7 +124,7 @@ span {
 	top: 20%;
 	left: 15%;
 	cursor: default;
-	box-shadow: 0 0 10px 5px rgba(255,255,255,0.9);
+	box-shadow: 0 0 0.625em 0.3125em rgba(255,255,255,0.9);
 }
 
 
@@ -151,7 +149,7 @@ span {
 	top: 20%;
 	left: 15%;
 	cursor: default;
-	box-shadow: 0 0 10px 5px rgba(255,255,255,0.9);
+	box-shadow: 0 0 0.625em 0.3125em rgba(255,255,255,0.9);
 }
 
 
@@ -176,7 +174,7 @@ span {
 	top: 20%;
 	left: 15%;
 	cursor: default;
-	box-shadow: 0 0 10px 5px rgba(255,255,255,0.9);
+	box-shadow: 0 0 0.625em 0.3125em rgba(255,255,255,0.9);
 }
 
 
@@ -201,15 +199,15 @@ span {
 	top: 20%;
 	left: 15%;
 	cursor: default;
-	box-shadow: 0 0 10px 5px rgba(255,255,255,0.9);
+	box-shadow: 0 0 0.625em 0.3125em rgba(255,255,255,0.9);
 }
 
 .close-btn {
 	position:absolute;
 	top:0;
 	right:0;
-	margin-right: -10px;
-	margin-top:-10px;
+	margin-right: -0.625em;
+	margin-top:-0.625em;
 	font-size: 0.8em;
 	font-weight: 700;
 	cursor: pointer;
@@ -218,7 +216,7 @@ span {
 	background: black;
 	color:white;
 	border-radius:100%;
-	box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
+	box-shadow: 0 0 0.3125em 0.3125em rgba(255,255,255,0.9);
 }
 .close-btn:hover {
     background: white;
@@ -230,7 +228,6 @@ span {
 
 footer {
 	text-align: center;
-	margin-top:0.75%;
 }
 
 .portfolio:hover {
