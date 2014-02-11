@@ -21,8 +21,6 @@ $(document).ready(function(){
 
 
 
-
-
     // show popup when you click
     $('.two').click(function(event){
         event.preventDefault(); // disable normal link function so that it doesn't refresh the page
@@ -42,8 +40,6 @@ $(document).ready(function(){
     $('.two-content').click(function(){
         return false;
     });
-
-
 
 
 

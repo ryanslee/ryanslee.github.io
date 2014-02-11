@@ -4,9 +4,7 @@ html {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;/*;
 	background-size: cover;
-	background-repeat: no-repeat;*/
 }
 
 body {
@@ -21,10 +19,21 @@ body {
 
 h1 {
 	text-align: center;
-	margin-top:2%;
-	margin-bottom: 0.5%;
+	margin-top:0.5em;
+	margin-bottom: 0.25em;
 	font-size: 3em;
 	font-weight:300;
+}
+
+strong {
+	color:#8C7057;
+	font-size:1.2em;
+	font-family: 'Oxygen', Arial, sans-serif;
+	text-transform: uppercase;	
+}
+
+.modalfont {
+	font-family:'Source Sans Pro', Arial, sans-serif;
 }
 
 .wrapper {
@@ -39,8 +48,7 @@ h1 {
 	font-size: 0.8em;
 }
 
-
-.reg-btn {
+.reg-btn, .reg-btn:visited, .reg-btn:hover, .reg-btn:active {
 	background-color:#fff;
 	border-radius: 1.5em;
 	padding:0.4em 1.5em;
@@ -50,15 +58,6 @@ h1 {
 	font-size: 0.8em
 }
 
-.email {
-	display:inline;
-	margin-left:1em;
-}
-
-.email:hover {
-	background-color:#999;
-	color:white;
-}
 
 span {
 	margin:0 0.5%;
@@ -120,19 +119,20 @@ span {
 
 .one-content {
 	background: #333;
-	padding: 5% 5%;
-	width: 60%;
+	padding: 3% 5%;
+	width: 70%;
 	position: relative;
-	top: 20%;
-	left: 15%;
+	top:10%;
+	left: 10%;
 	cursor: default;
 	text-align: left;
-	line-height: 1.6em;
+	line-height: 1.8em;
 	box-shadow: 0 0 0.625em 0.3125em rgba(255,255,255,0.9);
 }
 
 p {
 	margin-bottom: 1.5em;
+	font-size:1.2em;
 }
 
 .two-bg {
@@ -149,12 +149,14 @@ p {
 
 .two-content {
 	background: #333;
-	padding: 5% 5%;
-	width: 60%;
+	padding: 3% 5%;
+	width: 70%;
 	position: relative;
-	top: 20%;
-	left: 15%;
+	top:10%;
+	left: 10%;
 	cursor: default;
+	text-align: left;
+	line-height: 1.8em;
 	box-shadow: 0 0 0.625em 0.3125em rgba(255,255,255,0.9);
 }
 
@@ -174,12 +176,14 @@ p {
 
 .three-content {
 	background: #333;
-	padding: 5% 5%;
-	width: 60%;
+	padding: 3% 5%;
+	width: 70%;
 	position: relative;
-	top: 20%;
-	left: 15%;
+	top:10%;
+	left: 10%;
 	cursor: default;
+	text-align: left;
+	line-height: 1.8em;
 	box-shadow: 0 0 0.625em 0.3125em rgba(255,255,255,0.9);
 }
 
@@ -199,12 +203,14 @@ p {
 
 .four-content {
 	background: #333;
-	padding: 5% 5%;
-	width: 60%;
+	padding: 3% 5%;
+	width: 70%;
 	position: relative;
-	top: 20%;
-	left: 15%;
+	top:10%;
+	left: 10%;
 	cursor: default;
+	text-align: left;
+	line-height: 1.8em;
 	box-shadow: 0 0 0.625em 0.3125em rgba(255,255,255,0.9);
 }
 
@@ -234,6 +240,7 @@ p {
 
 footer {
 	text-align: center;
+	padding-bottom: 3em;
 }
 
 .portfolio:hover {
@@ -259,4 +266,15 @@ footer {
 	background-color:#4099ff;
 	color:white;
 }
+
+.email, .email:visited, .email:active {
+	display:inline;
+	margin-left:1em;
+}
+
+.email:hover {
+	background-color:#999;
+	color:white;
+}
+
 
