@@ -85,4 +85,48 @@ $(document).ready(function(){
         return false;
     });
 
+
+
+        // show popup when you click
+    $('.five').click(function(event){
+        event.preventDefault(); // disable normal link function so that it doesn't refresh the page
+        $('.five-bg').show(); //display popup
+    });
+
+    // hide popup when user clicks on close button
+    $('.close-btn').click(function(){
+        $('.five-bg').hide(); // hide the overlay
+    });
+
+    // hides the popup if user clicks anywhere outside the container
+    $('.five-bg').click(function(){
+        $('.five-bg').hide();
+    })
+    // prevents the overlay from closing if user clicks inside the popup overlay
+    $('.five-content').click(function(){
+        return false;
+    });
+
+
+
+    // show popup when you click
+    $('.six').click(function(event){
+        event.preventDefault(); // disable normal link function so that it doesn't refresh the page
+        $('.six-bg').show(); //display popup
+    });
+
+    // hide popup when user clicks on close button
+    $('.close-btn').click(function(){
+        $('.six-bg').hide(); // hide the overlay
+    });
+
+    // hides the popup if user clicks anywhere outside the container
+    $('.six-bg').click(function(){
+        $('.six-bg').hide();
+    })
+    // prevents the overlay from closing if user clicks inside the popup overlay
+    $('.six-content').click(function(){
+        return false;
+    });
+
 });
