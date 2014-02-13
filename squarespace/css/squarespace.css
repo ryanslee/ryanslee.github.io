@@ -1,10 +1,11 @@
 html {
 	height:100%;
-	background:url('bg2.jpg') no-repeat center center fixed; 
+	background:url('bg5.jpg') no-repeat fixed bottom; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	position:relative;
 }
 
 body {
@@ -218,18 +219,14 @@ p {
 	position:absolute;
 	top:0;
 	right:0;
-	margin-right: -0.625em;
-	margin-top:-0.625em;
-	font-size: 0.8em;
-	font-weight: 700;
+	font-size: 2em;
 	cursor: pointer;
 	border: 0 none;
-	padding: 0.75% 1.2%;
-	background: black;
+	padding: 0.5% 1.5%;
+	background: none;
 	color:white;
-	border-radius:100%;
-	box-shadow: 0 0 0.3125em 0.3125em rgba(255,255,255,0.9);
 }
+
 .close-btn:hover {
     background: white;
     color:black;
