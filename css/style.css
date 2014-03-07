@@ -1,0 +1,142 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Small screens (default) */
+html {
+    font-size: 62.5%; /* to make 10px */
+    background:url('../images/background2.jpg') no-repeat fixed 50% 30%;
+    z-index:-10;
+    font-family:"raleway", Arial, serif;
+    font-weight:500;
+    color:#f2f2f2;
+}
+ 
+/* Medium screens (640px) */
+@media (min-width: 40rem) { 
+    html {
+        font-size: 75%;
+    }
+    .column {
+        float: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+  
+    .column.full { 
+        width: 100%; 
+    }
+    .column.two-thirds { 
+        width: 66.7%; 
+    }
+    .column.half { 
+        width: 50%; 
+    }
+    .column.third { 
+        width: 33.3%; 
+    }
+    .column.fourth { 
+        width: 24.95%; 
+    }
+    .column.flow-opposite { 
+        float: right; 
+    }
+}
+ 
+/* Large screens (1024px) */
+@media (min-width: 64rem) {
+    html {
+        font-size: 100%; 
+    }
+}
+
+/* Clearfix */
+
+.row {
+    margin:1rem 0;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}
+
+/* End Clearfix */
+
+.container {
+  margin: 0 auto;
+  margin-top:4rem;
+  max-width: 90rem;
+  width: 80%;
+}
+
+.column {
+    width:100%;
+    padding:0;
+}
+
+/* Navigation */
+
+ul#navigation {
+    text-align:left;
+    padding:0;
+    padding-left:10%;
+    font-size:1em;
+}
+
+#navigation li {
+    display:inline;
+    list-style-type:none;
+}
+
+#navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right:3rem;
+}
+
+nav {
+    background:rgba(0,0,0,0.7);
+    position:absolute;
+    top:0;
+}
+
+nav a:visited {
+    color:#f2f2f2;
+}
+
+nav a:hover {
+    color:#1ebad6;
+}
+
+nav a:active {
+    color:#1ebad6;
+}
+
+/* Main Content */
+
+h1 {
+    font-size:3rem;
+    text-transform: uppercase;
+    font-weight:300;
+    margin-bottom:0;
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top:0;
+    margin-bottom:4rem;
+}
