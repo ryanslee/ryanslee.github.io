@@ -1,0 +1,206 @@
+/* first page */
+
+.logo-large {
+	margin-top:4em;
+}
+
+h1.practitioner {
+	text-align: center;
+	font-weight:bold;
+	color:white;
+	margin-top:0.5em;
+	margin-bottom:1em;
+}
+
+.formbackground {
+	background-color: #6f6e74;
+	margin:0 auto;
+	margin-top:4em;
+}
+
+input[type="submit"]{
+	background-color: #e37907;
+	font-size:1.5em;
+	color:white;
+	border:none;
+	width:100%;
+	padding:0.5em 1em;
+	margin:1em auto;
+}
+
+/* second page */
+
+.section-header {
+	color:#e37907;
+	font-weight: bold;
+	border-bottom: 0.125em solid #e37907;
+	margin-bottom:1em;
+}
+
+.survey-header {
+	font-weight:bold;
+	display:block;
+	color:white;
+	background-color:rgba(0,0,0,0.3);
+	margin:0;
+	padding:1.5em;
+}
+
+.survey-header:hover {
+	color:white;
+	text-shadow:0.125em 0.125em 0.625em white;
+}
+
+.survey-info {
+	font-style: italic;
+	color:white;
+	padding:1em;
+	margin:0;
+}
+
+.outline{
+	border: 0.0625em solid black;
+	padding:0;
+	margin-bottom:2em;
+}
+
+.purple {
+	background-color: #9e0048;
+}
+
+.yellow {
+	background-color: #bb7c00;
+}
+
+.green {
+	background-color: #323808;
+}
+
+.blue {
+	background-color: #003f5d;
+}
+
+.orange {
+	background-color: #e37907;
+}
+
+.gray {
+	background-color: #6f6e74;
+}
+
+.lightgreen {
+	background-color: #009e0f;
+}
+
+/* third page */
+
+.question {
+	font-weight:bold;
+}
+
+.answer {
+	margin-top:1em;
+	margin-bottom:3em;
+}
+
+ol {
+	margin:0;
+}
+
+.big-button {
+	display:block;
+	width:100%;
+	height:4em;
+	border-radius:0.625em;
+	color:white;
+	font-weight: bold;
+	line-height: 4em;
+	text-align:center;
+	margin:3em 0 4em 0;
+	font-size:2em;
+}
+
+.big-button:hover{
+	color:white;
+	text-shadow:0 0 0.5em white;
+	box-shadow:0 0 0.3em 0.125em #333;
+}
+
+/* fourth page */
+
+.finished {
+	margin-top:2em;
+	margin-left:2em;
+	font-size: 2em;
+	text-align: left;
+}
+
+.wrapper {
+  width: 100px; /* Set the size of the progress bar */
+  height: 100px;
+  position: absolute; /* Enable clipping */
+  clip: rect(0px, 100px, 100px, 50px); /* Hide half of the progress bar */
+  margin-left:6.5em;
+  margin-top:3em;
+}
+
+/* Set the sizes of the elements that make up the progress bar */
+.circle {
+  width: 80px;
+  height: 80px;
+  border: 10px solid green;
+  border-radius: 50px;
+  position: absolute;
+  clip: rect(0px, 50px, 100px, 0px);
+}
+
+/* Using the data attributes for the animation selectors. */
+/* Base settings for all animated elements */
+div[data-anim~=base] {
+  -webkit-animation-iteration-count: 1;  /* Only run once */
+  -webkit-animation-fill-mode: forwards; /* Hold the last keyframe */
+  -webkit-animation-timing-function:linear; /* Linear animation */
+}
+
+.wrapper[data-anim~=wrapper] {
+  -webkit-animation-duration: 0.01s; /* Complete keyframes asap */
+  -webkit-animation-delay: 0.5s; /* Wait half of the animation */
+  -webkit-animation-name: close-wrapper; /* Keyframes name */
+}
+
+.circle[data-anim~=left] {
+  -webkit-animation-duration: 1s; /* Full animation time */
+  -webkit-animation-name: left-spin;
+}
+
+.circle[data-anim~=right] {
+  -webkit-animation-duration: 0.5s; /* Half animation time */
+  -webkit-animation-name: right-spin;
+}
+
+/* Rotate the right side of the progress bar from 0 to 180 degrees */
+@-webkit-keyframes right-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+  }
+}
+/* Rotate the left side of the progress bar from 0 to 360 degrees */
+@-webkit-keyframes left-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/* Set the wrapper clip to auto, effectively removing the clip */
+@-webkit-keyframes close-wrapper {
+  to {
+    clip: rect(auto, auto, auto, auto);
+  }
+}
+
+
