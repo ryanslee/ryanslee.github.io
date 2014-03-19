@@ -301,7 +301,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-.swing {
+.swing:hover {
   -webkit-transform-origin: top center;
   -ms-transform-origin: top center;
   transform-origin: top center;

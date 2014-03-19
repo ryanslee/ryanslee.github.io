@@ -4,51 +4,21 @@
   box-sizing: border-box;
 }
 
+::selection {
+    color:white;background:#1EBAD6;
+}
+
+::-moz-selection {
+    color:white;background:#1EBAD6;
+}
+
 /* Small screens (default) */
 html {
-    font-size: 62.5%; /* to make 10px */
+    font-size: 80%; /* to make 10px */
     background-color:white;
-    font-family:"raleway", Helvetica, Arial, sans-serif;
+    font-family:"Open Sans", Helvetica, Arial, sans-serif;
     font-weight:300;
     color:#4A4A4A;
-}
- 
-/* Medium screens (640px) */
-@media (min-width: 40rem) { 
-    html {
-        font-size: 75%;
-    }
-    .column {
-        float: left;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-  
-    .column.full { 
-        width: 100%; 
-    }
-    .column.two-thirds { 
-        width: 66.7%; 
-    }
-    .column.half { 
-        width: 50%; 
-    }
-    .column.third { 
-        width: 33.3%; 
-    }
-    .column.fourth { 
-        width: 24.95%; 
-    }
-    .column.flow-opposite { 
-        float: right; 
-    }
-}
- 
-/* Large screens (1024px) */
-@media (min-width: 64rem) {
-    html {
-        font-size: 100%; 
-    }
 }
 
 /* Clearfix */
@@ -82,6 +52,143 @@ html {
 .column {
     width:100%;
     padding:0;
+}
+
+/* Main Content */
+
+header {
+    text-transform: uppercase;
+    text-align: center;
+    border-top:1px solid #EEE;
+    border-bottom:1px solid #EEE;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, a:visited, a:active {
+    border-bottom:1px solid #1EBAD6;
+    color:#1EBAD6;
+}
+
+a:hover {
+    color:#CCC;
+    border:none;
+}
+
+h1 {
+    font-size:2.5rem;
+    font-family:"Montserrat", Helvetica, sans-serif;
+    font-weight:700;
+    letter-spacing: 0.25rem;
+    margin-bottom:0;
+}
+
+h2 {
+    font-size:1.25rem;
+    text-transform: uppercase;
+    font-family:"Alegreya", Helvetica, sans-serif;
+    font-weight:700;
+    letter-spacing: 0.1rem;
+    margin-top:0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 0.8rem;
+    font-family:"Open Sans", Helvetica, sans-serif;
+    font-weight:600;
+    letter-spacing:0.25rem;
+    color:#D4D4D4;
+    margin:0 auto;
+}
+
+.social {
+    padding:2rem 0;
+}
+
+.social a {
+    border-bottom:none;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+}
+
+.social a:hover {
+    color:#4A4A4A;
+}
+
+section {
+    margin-top:3rem;
+}
+ 
+p {
+    line-height:2rem;
+}
+
+.bold {
+    font-weight:700;
+}
+
+.strikeout {
+    text-decoration: line-through;
+}
+
+.icon {
+    display:inline-block;
+    text-align: center;
+    margin:3rem auto;
+    padding:2rem 0 1rem 0;
+    border-top:1px solid #EEE;
+    border-bottom:1px solid #EEE;
+}
+
+.currently {
+    text-transform: uppercase;
+}
+
+.author {
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* Medium/Large screens (768px) */
+@media (min-width: 48rem) {
+    html {
+        font-size: 100%; 
+    }
+
+    .column {
+    float: left;
+    }
+
+    .column.full { 
+        width: 100%; 
+    }
+    .column.two-thirds { 
+        width: 66.7%; 
+    }
+    .column.half { 
+        width: 50%; 
+        padding-right: 2rem;
+    }
+    .column.third { 
+        width: 33.3%; 
+    }
+    .column.fourth { 
+        width: 24.95%; 
+    }
+    .column.flow-opposite { 
+        float: right;
+        padding-right:0;
+        padding-left: 2rem;
+    }
+
+    .container {
+        width:70%;
+    }
 }
 
 
@@ -122,48 +229,3 @@ nav a:hover {
 nav a:active {
     color:#1ebad6;
 }*/
-
-/* Main Content */
-
-header {
-    text-transform: uppercase;
-    text-align: center;
-    border-bottom:1px solid #EEE;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:visited, a:hover, a:active {
-    color:#4A4A4A;
-}
-
-h1 {
-    font-size:2.5rem;
-    font-family:"Montserrat", Helvetica, sans-serif;
-    font-weight:700;
-    letter-spacing: 0.25rem;
-    margin-bottom:0;
-}
-
-h3 {
-    font-size: 0.8rem;
-    font-family:"Raleway", Helvetica, sans-serif;
-    font-weight:600;
-    letter-spacing:0.12rem;
-    color:#D4D4D4;
-    margin-top:0;
-}
-
-.twitter {
-    padding:1rem 0;
-}
-
-.twitter a, .twitter a:visited {
-    color:#1EBAD6;
-}
-
-.twitter a:hover {
-    color:#4A4A4A;
-}
