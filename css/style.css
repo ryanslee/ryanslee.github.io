@@ -54,27 +54,13 @@ html {
     padding:0;
 }
 
-/* Main Content */
+/* HEADER */
 
 header {
     text-transform: uppercase;
     text-align: center;
     border-top:1px solid #EEE;
     border-bottom:1px solid #EEE;
-}
-
-a {
-    text-decoration: none;
-}
-
-a, a:visited, a:active {
-    border-bottom:1px solid #1EBAD6;
-    color:#1EBAD6;
-}
-
-a:hover {
-    color:#CCC;
-    border:none;
 }
 
 h1 {
@@ -110,20 +96,184 @@ h3 {
 
 .social a {
     border-bottom:none;
-    padding-left:0.5rem;
-    padding-right:0.5rem;
+    padding-left:1rem;
+    padding-right:1rem;
 }
 
 .social a:hover {
     color:#4A4A4A;
 }
 
+.tooltip {
+    display: inline;
+    position: relative;
+}
+
+.tooltip:hover:after{
+    background: #4A4A4A;
+    border-radius: 5px;
+    width:5.625rem;
+    top:2.25rem;
+    right:-1.5rem;
+    color: #fff;
+    font-family:"Montserrat", Helvetica, sans-serif;
+    font-size:0.75rem;
+    content: attr(tooltip);
+    padding: 0.3125rem;
+    position: absolute;
+    z-index: 98;
+}
+
+.tooltip:hover:before{
+    border: solid;
+    border-color: #4A4A4A transparent;
+    border-width: 0 0.625rem 0.625rem 0.625rem;
+    top: 1.9rem;
+    content: "";
+    position: absolute;
+    z-index: 99;
+}
+
+/* MAIN BODY */
+
+a {
+    text-decoration: none;
+    font-weight:400;
+}
+
+a, a:visited, a:active {
+    color:#1EBAD6;
+}
+
+
+/*********************************************
+ * ROLLING LINKS
+ *********************************************/
+
+#reveal .roll {
+    display: inline-block; /* give it a layout */    
+    overflow: hidden;
+    vertical-align: top; /* just to be sure */
+
+    /*
+     * The smaller the number the closer you look at this  element
+    */
+    -webkit-perspective: 400px;
+       -moz-perspective: 400px;
+        -ms-perspective: 400px;
+            perspective: 400px;
+
+    /*
+     * Relative position of the POV
+     * Default is 50% 50% so not necessary
+    */
+    -webkit-perspective-origin: 50% 50%;
+       -moz-perspective-origin: 50% 50%;
+        -ms-perspective-origin: 50% 50%;
+            perspective-origin: 50% 50%;    
+
+}
+    #reveal .roll:hover {
+        background: none;
+        text-shadow: none;
+    }
+
+#reveal .roll span {
+    display: block; /* give it a layout */ 
+    position: relative;
+    padding: 0 2px;
+
+    pointer-events: none;
+
+    /* duration */
+    -webkit-transition: all 400ms ease;
+       -moz-transition: all 400ms ease;
+        -ms-transition: all 400ms ease;
+            transition: all 400ms ease;
+
+    -webkit-transform-origin: 50% 0%; /* posx posy */
+       -moz-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    /*
+    * CSS3 transform-style explained here:
+    * http://www.webkit.org/blog-files/3d-transforms/transform-style.html
+    */
+}
+    #reveal .roll:hover span {
+        background: rgba(0,0,0,0.5);
+
+        -webkit-transform: translate3d( 0px, 0px, -45px ) rotateX( 90deg );
+           -moz-transform: translate3d( 0px, 0px, -45px ) rotateX( 90deg );
+            -ms-transform: translate3d( 0px, 0px, -45px ) rotateX( 90deg );
+                transform: translate3d( 0px, 0px, -45px ) rotateX( 90deg );
+    }
+
+
+/* ======================= */
+/* = Face after rotation = */
+/* ======================= */
+#reveal .roll span:after {
+    content: attr(data-title);
+    display: block; /* maybe its not necessary */
+    position: absolute; /* position over  */
+    left: 0;
+    top: 0;
+    padding: 0 2px; /* nothing functional, just right, left space */
+
+    color: #fff;
+    background: hsl(189, 75%, 48%);
+
+    -webkit-transform-origin: 50% 0%;
+       -moz-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    
+    /* 
+    * translate3d => move up element to the top 
+    *     rotateX => rotate till hidden
+    */
+    -webkit-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+       -moz-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+        -ms-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+            transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+}
+
+/*********************************************
+ * END ROLLING LINKS
+ *********************************************/
+
 section {
     margin-top:3rem;
 }
  
 p {
-    line-height:2rem;
+    line-height:1.75rem;
+    margin-bottom:1.5rem;
+}
+
+.reg-link, .reg-link:active, .reg-link:visited {
+    font-weight:300;
+    color:#4A4A4A;
+    border-bottom:1px solid #1EBAD6;
+}
+
+.reg-link:hover {
+    font-weight:300;
+    color:#CCC;
+    border-bottom:1px solid #CCC;
+}
+
+
+/* SPECIFICS */
+
+.currently {
+    text-transform: uppercase;
 }
 
 .bold {
@@ -134,23 +284,25 @@ p {
     text-decoration: line-through;
 }
 
-.icon {
-    display:inline-block;
-    text-align: center;
-    margin:3rem auto;
-    padding:2rem 0 1rem 0;
-    border-top:1px solid #EEE;
-    border-bottom:1px solid #EEE;
-}
-
-.currently {
-    text-transform: uppercase;
-}
-
 .author {
     text-align: right;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+
+/* FOOTER */
+
+footer {
+    display:inline-block;
+    text-align: center;
+    margin:3rem auto;
+    border-top:1px solid #EEE;
+    border-bottom:1px solid #EEE;
+}
+
+.panda {
+    padding:2rem 0 1.5rem 0;
 }
 
 
@@ -189,6 +341,7 @@ p {
     .container {
         width:70%;
     }
+
 }
 
 
