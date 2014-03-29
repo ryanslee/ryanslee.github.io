@@ -199,3 +199,6 @@ p {
 	letter-spacing: 0.0625em;
 }
 
+.one, .one-bg, .one-content {
+	display:none;
+}
