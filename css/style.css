@@ -309,6 +309,7 @@ footer {
 }
 
 
+
 /* Medium/Large screens (768px) */
 @media (min-width: 48rem) {
     html {
@@ -346,42 +347,8 @@ footer {
     }
 
 }
-
-
-/* NAVIGATION...
-
-ul#navigation {
-    text-align:left;
-    padding:0;
-    padding-left:10%;
-    font-size:1em;
-}
-
-#navigation li {
-    display:inline;
-    list-style-type:none;
-}
-
-#navigation a {
-    text-decoration: none;
-    text-transform: uppercase;
-    padding-right:3rem;
-}
-
-nav {
-    background:rgba(0,0,0,0.7);
-    position:absolute;
-    top:0;
-}
-
-nav a:visited {
-    color:#f2f2f2;
-}
-
-nav a:hover {
-    color:#1ebad6;
-}
-
-nav a:active {
-    color:#1ebad6;
+/*
+.soundcloud {
+    padding:0rem;
+    margin-bottom:2rem;
 }*/
