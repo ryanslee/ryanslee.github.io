@@ -21,27 +21,6 @@ html {
     color:#4A4A4A;
 }
 
-/* Clearfix */
-
-.row {
-    margin:1rem 0;
-}
-
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
- 
-.clearfix:after {
-  clear: both;
-}
- 
-.clearfix {
-  *zoom: 1;
-}
-
-/* End Clearfix */
-
 .container {
   margin: 0 auto;
   margin-top:4rem;
@@ -85,7 +64,7 @@ h3 {
     font-size: 0.8rem;
     font-family:"Open Sans", Helvetica, sans-serif;
     font-weight:600;
-    letter-spacing:0.25rem;
+    letter-spacing:0.2rem;
     color:#D4D4D4;
     margin:0 auto;
 }
@@ -113,6 +92,7 @@ h3 {
     background: #4A4A4A;
     border-radius: 5px;
     width:5.625rem;
+    position: absolute;
     top:2.25rem;
     right:-1.5rem;
     color: #fff;
@@ -120,7 +100,6 @@ h3 {
     font-size:0.75rem;
     content: attr(tooltip);
     padding: 0.3125rem;
-    position: absolute;
     z-index: 98;
 }
 
@@ -134,6 +113,24 @@ h3 {
     z-index: 99;
 }
 
+/* END HEADER */
+
+/* PIC */
+
+.my-pic {
+    text-align:center;
+}
+
+.my-pic img {
+    width:15%;
+    border:1px solid #888;
+    border-radius:100%;
+    margin-top:3rem;
+    box-shadow: 0 0 5px 0 #555;
+}
+
+/* END PIC */
+
 /* MAIN BODY */
 
 a {
@@ -146,14 +143,12 @@ a, a:visited, a:active {
 }
 
 
-/*********************************************
- * ROLLING LINKS
- *********************************************/
+/* ROLLING LINKS */
 
 #reveal .roll {
-    display: inline-block; /* give it a layout */    
+    display: inline-block;   
     overflow: hidden;
-    vertical-align: top; /* just to be sure */
+    vertical-align: top;
 
     /*
      * The smaller the number the closer you look at this  element
@@ -179,7 +174,7 @@ a, a:visited, a:active {
     }
 
 #reveal .roll span {
-    display: block; /* give it a layout */ 
+    display: block; 
     position: relative;
     padding: 0 2px;
 
@@ -200,10 +195,6 @@ a, a:visited, a:active {
        -moz-transform-style: preserve-3d;
         -ms-transform-style: preserve-3d;
             transform-style: preserve-3d;
-    /*
-    * CSS3 transform-style explained here:
-    * http://www.webkit.org/blog-files/3d-transforms/transform-style.html
-    */
 }
     #reveal .roll:hover span {
         background: rgba(0,0,0,0.5);
@@ -215,16 +206,15 @@ a, a:visited, a:active {
     }
 
 
-/* ======================= */
-/* = Face after rotation = */
-/* ======================= */
+/* Face after rotation */
+
 #reveal .roll span:after {
     content: attr(data-title);
-    display: block; /* maybe its not necessary */
-    position: absolute; /* position over  */
+    display: block; 
+    position: absolute; 
     left: 0;
     top: 0;
-    padding: 0 2px; /* nothing functional, just right, left space */
+    padding: 0 2px;
 
     color: #fff;
     background: hsl(189, 75%, 48%);
@@ -244,9 +234,7 @@ a, a:visited, a:active {
             transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
 }
 
-/*********************************************
- * END ROLLING LINKS
- *********************************************/
+/* END ROLLING LINKS */
 
 section {
     margin-top:3rem;
@@ -269,8 +257,9 @@ p {
     border-bottom:1px solid #CCC;
 }
 
+/* END MAIN BODY */
 
-/* SPECIFICS */
+/* OTHER */
 
 .currently {
     text-transform: uppercase;
@@ -290,9 +279,16 @@ p {
     font-weight: 700;
 }
 
-/*.quote {
-    text-align:center;
-}*/
+footer > p {
+    margin-bottom:2.5rem;
+}
+
+.soundcloud {
+    padding:0rem;
+    margin-bottom:3rem;
+}
+
+/* END OTHER */
 
 /* FOOTER */
 
@@ -305,12 +301,13 @@ footer {
 }
 
 .panda {
-    padding:2rem 0 1.5rem 0;
+    padding:2rem 0 1rem 0;
 }
 
+/* END FOOTER */
 
+/* MED/LG SCREENS (768px) */
 
-/* Medium/Large screens (768px) */
 @media (min-width: 48rem) {
     html {
         font-size: 100%; 
@@ -347,8 +344,4 @@ footer {
     }
 
 }
-/*
-.soundcloud {
-    padding:0rem;
-    margin-bottom:2rem;
-}*/
+
