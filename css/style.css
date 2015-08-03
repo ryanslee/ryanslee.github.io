@@ -33,6 +33,14 @@ html {
     padding:0;
 }
 
+.centered {
+    text-align: center;
+}
+
+.centered img {
+    margin-bottom:1rem;
+}
+
 /* HEADER */
 
 header {
@@ -286,11 +294,6 @@ p {
 
 footer > p {
     margin-bottom:2.5rem;
-}
-
-.soundcloud {
-    padding:0rem;
-    margin-bottom:3rem;
 }
 
 /* END OTHER */
