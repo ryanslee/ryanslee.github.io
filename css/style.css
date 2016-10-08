@@ -53,8 +53,8 @@ header {
 h1 {
     font-size:2.5rem;
     font-family:"Montserrat", Helvetica, sans-serif;
-    font-weight:700;
-    letter-spacing: 0.25rem;
+    font-weight:600;
+    letter-spacing: 0.1rem;
     margin-bottom:0;
 }
 
@@ -65,8 +65,8 @@ h2 {
     font-weight:700;
     letter-spacing: 0.1rem;
     margin-top:0;
-    padding-bottom: 1rem;
-    text-align: center;
+    padding-bottom: 0.25rem;
+    border-bottom:1px solid #DDD;
 }
 
 h3 {
@@ -79,13 +79,13 @@ h3 {
 }
 
 .social {
-    padding:1rem 0;
+    padding:1.5rem 0;
 }
 
 .social a {
     border-bottom:none;
-    padding-left:1rem;
-    padding-right:1rem;
+    padding-left:1.25rem;
+    padding-right:1.25rem;
 }
 
 .social a:hover {
@@ -131,10 +131,11 @@ h3 {
 }
 
 .my-pic img {
-    width:150px;
+    width:200px;
     border:1px solid #888;
-    border-radius:100%;
+   /* border-radius:100%;*/
     margin-top:3rem;
+    margin-bottom:-1rem;
     box-shadow: 0 0 5px 0 #555;
 }
 
@@ -150,7 +151,6 @@ a {
 a, a:visited, a:active {
     color:#1EBAD6;
 }
-
 
 /* ROLLING LINKS */
 
@@ -304,8 +304,8 @@ footer {
     display:inline-block;
     text-align: center;
     margin:3rem auto;
-    border-top:1px solid #EEE;
-    border-bottom:1px solid #EEE;
+    /*border-top:1px solid #EEE;
+    border-bottom:1px solid #EEE;*/
 }
 
 .panda {
